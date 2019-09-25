@@ -59,6 +59,7 @@ public class AdivinApp extends Application {
 		AlertType alertType = null;
 		String alertTitle = "";
 		String alertMessage = "";
+		numberField.setText("");
 		intentos++;
 		if (matcher.matches()) {
 			int number = Integer.parseInt(numberWord);
