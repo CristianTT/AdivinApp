@@ -1,4 +1,4 @@
-package dad.favafx;
+package dad.javafx;
 
 public class Main {
 

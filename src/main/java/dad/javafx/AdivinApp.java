@@ -1,4 +1,4 @@
-package dad.favafx;
+package dad.javafx;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -28,7 +28,7 @@ public class AdivinApp extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-		introductionLabel = new Label("Introduce un número del 1 al 100");
+		introductionLabel = new Label("Introduce un nï¿½mero del 1 al 100");
 
 		numberField = new TextField();
 		numberField.setMaxWidth(150);
@@ -65,20 +65,20 @@ public class AdivinApp extends Application {
 			int number = Integer.parseInt(numberWord);
 			if (number == numSecreto) {
 				alertType = AlertType.INFORMATION;
-				alertTitle = "¡Has acertado!";
+				alertTitle = "ï¿½Has acertado!";
 				alertMessage = "Solo has necesitado " + intentos + " intentos\n\n"
 						+ "Puedes volver a jugar";
 				generarNumeroSecreto();
 			} else {
 				alertType = AlertType.WARNING;
-				alertTitle = "¡Has fallado!";
-				alertMessage = "El número a adivinar es " + ((number > numSecreto)?"menor":"mayor") + " que " + number + "\n\n"
+				alertTitle = "ï¿½Has fallado!";
+				alertMessage = "El nï¿½mero a adivinar es " + ((number > numSecreto)?"menor":"mayor") + " que " + number + "\n\n"
 						+ "Vuelve a intentarlo";
 			}
 		} else {
 			alertType = AlertType.ERROR;
 			alertTitle = "Error";
-			alertMessage = "El número introducido no es válido";
+			alertMessage = "El nï¿½mero introducido no es vï¿½lido";
 		}
 		Alert alert = new Alert(alertType);
 		alert.setTitle("AdivinApp");
